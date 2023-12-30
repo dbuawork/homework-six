@@ -42,14 +42,22 @@
 # num3 = [2, 3, 4, 5, 6, 7, 8, 9]
 # print("Отриманий результат повертається із функції: ",count_primes(num3))
 
-# 4.Напишіть функцію, яка видаляє зі списку ціле задане число. З функції потрібно повернути кількість видаленних елементів.
+# # 4.Напишіть функцію, яка видаляє зі списку ціле задане число. З функції потрібно повернути кількість видаленних елементів.
+#
+# def remove_element(lst, target):
+#     count_removed = lst.count(target)
+#     lst = [num for num in lst if num != target]
+#     return count_removed
+#
+# num4 = [1, 2, 3, 4, 2, 5, 2]
+# target_number = 2
+# print("Кількість видаленних елементів: ",remove_element(num4, target_number))
 
-def remove_element(lst, target):
-    count_removed = lst.count(target)
-    lst = [num for num in lst if num != target]
-    return count_removed
+# 5.Напишіть функцію, яка отримує два списки як параметр і повертає список, що містить елементи обох списків.
 
-# Приклад використання:
-num4 = [1, 2, 3, 4, 2, 5, 2]
-target_number = 2
-print("Кількість видаленних елементів: ",remove_element(num4, target_number))
+def merge_lists(list1, list2):
+    return list1 + list2
+
+list_num1 = [1, 2, 3]
+list_num2 = [4, 5, 6]
+print("Два списки: ",merge_lists(list_num1, list_num2))
