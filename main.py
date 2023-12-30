@@ -61,10 +61,3 @@
 # list_num1 = [1, 2, 3]
 # list_num2 = [4, 5, 6]
 # print("Два списки: ",merge_lists(list_num1, list_num2))
-
-def power_elements(lst, power):
-    return [num ** power for num in lst]
-
-num6 = [2, 3, 4]
-power_value = 2
-print("Функція повертає новий список, який містить отримані результати: ", power_elements(num6, power_value))
